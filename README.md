@@ -54,10 +54,14 @@
 
 ## 6.  Testing, Integration, Deployment, Scaling and Monitoring
 
-We are going to use the Kubernetes for container orchestration. There will be separated clusters for the Backend services, MongoDB, and Redis databases.\
-A Jenkins setup will handle the continuous deployment and integration. Jest, Chai, and Mokka will be utilized to create test cases for the system.\
-We are going to create a cluster for the **ELK** (Elastic search, Logback, and Kibana) stack deployment to collect the logs from all the clusters, which are going to be feed to the Logback instance and processed by the Elastic search. The Kibana will be used to create the dashboard(s) for monitoring and the alert system.\
-The container instance will send their keep alive with the instance CPU and Memory resources utilization, which are going to be processed by the **ELK** stack and presented on the Kibana dashboards.\
+We are going to use the Kubernetes for container orchestration. There will be separated clusters for the Backend services, MongoDB, and Redis databases.
+
+A Jenkins setup will handle the continuous deployment and integration. Jest, Chai, and Mokka will be utilized to create test cases for the system.
+
+We are going to create a cluster for the **ELK** (Elastic search, Logback, and Kibana) stack deployment to collect the logs from all the clusters, which are going to be feed to the Logback instance and processed by the Elastic search. The Kibana will be used to create the dashboard(s) for monitoring and the alert system.
+
+The container instance will send their keep alive with the instance CPU and Memory resources utilization, which are going to be processed by the **ELK** stack and presented on the Kibana dashboards.
+
 There will be four sets of clusters, one for the development cycle, one for the testing cycle, on for the pre-release period, and one for production deployment. We can also create a temporary cluster for the bug fixing cycle.
 
 ## 7. Collaboration and Project Management
