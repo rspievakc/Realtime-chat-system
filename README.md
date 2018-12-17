@@ -38,8 +38,8 @@ The backend contains REST endpoints and WebSocket channels which implement real-
 
 ## 4. Infrastructure
 
-• Docker - It is a containerized solution for developing, shipping and running applications. It detaches de application from the infrastructure enabling us to create image, containers and to deliver the solution quickly. It also allows us to use containers in the developer workstations, replicating the production environment. The docker's containers define the unit for distribution and allow to scale our services efficiently. 
-• Kubernetes - It offers us the Docker containers deployment, scaling, and management, also,  it is independent of the infrastructure provider.
+• Docker - It is a containerized solution for developing, shipping and running applications. It detaches de application from the infrastructure enabling us to create image, containers and to deliver the solution quickly. It also allows us to use containers in the developer workstations, replicating the production environment. The docker's containers define the unit for distribution and allow to scale our services efficiently.
+• Kubernetes - It offers us the Docker containers orchestration, including deployment, scaling, and management, also,  it is independent of the infrastructure provider.
 
 ## 5. Development tooling
 
