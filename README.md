@@ -2,11 +2,11 @@
 
 ## 1. Introduction
 
-The objective of this project is to create a real-time chat solution. I've decided to use Javascript language across all the stack, to unify the language and data format, optimize the development resources, and implement source code re-utilization.
+&nbsp;&nbsp;The objective of this project is to create a real-time chat solution. I've decided to use Javascript language across all the stack, to unify the language and data format, optimize the development resources, and implement source code re-utilization.
 
-The backend contains REST endpoints and WebSocket channels which implement real-time updates. The REST endpoints will handle user registration, the other services will be accessed by WebSockets.
+&nbsp;&nbsp;The backend contains REST endpoints and WebSocket channels which implement real-time updates. The REST endpoints will handle user registration, the other services will be accessed by WebSockets.
 
-Please find the sequence diagram link on the section 9.
+&nbsp;&nbsp;Please find the sequence diagram link on the section 9.
 
 ## 2. Backend technology stack
 
