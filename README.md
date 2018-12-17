@@ -1,4 +1,4 @@
-# Real-time chat system
+# Real time chat system
 
 ## 1. Introduction
 
