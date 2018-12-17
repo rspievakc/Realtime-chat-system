@@ -62,12 +62,12 @@ There will be four sets of clusters, one for the development cycle, one for the 
 
 ## 7. Collaboration and Project Management
 
-We are going to use the Asana Project Management system to create a collaborative development platform. It will handle tasks, issues, chronograms, and documentation snippets.\
+We are using the Asana Project Management system to create a collaborative development platform. It will handle tasks, issues, chronograms, and documentation snippets.\
 The GitHub platform is going to handle the version-control for the system and will be integrated on the Asana platform.
 
 ## 8. New feature: Message search system.
 
-We can extend the ELK setup to implement the message searching feature. It is going to index all the groups/rooms and their respective messages allowing the user to search messages.\
+The ELK stack can be extended to implement the message searching feature. The idea is to index all the groups/rooms and their respective messages allowing the user to search past messages.\
 As an option, we can also create a message classification system, which can flag essential messages.
 
 ## 9. Attachments
