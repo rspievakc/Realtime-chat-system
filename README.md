@@ -16,7 +16,7 @@
 
 • **Socket.IO** - It is one of the first WebSocket libraries, very popular, has features like rooms, broadcast and message acknowledgment and callbacks. It is very well tested and is production enabled.
 
-**Redis** - In memory database with Subscribe/Publish channels, which we will be used to implement real-time updates for each user in a distributed architecture. It's very fast and is often used to store cached information, evicting having to compute the same values again.
+• **Redis** - In memory database with Subscribe/Publish channels, which we will be used to implement real-time updates for each user in a distributed architecture. It's very fast and is often used to store cached information, evicting having to compute the same values again.
 
 • **MongoDB** - It is a document database, can use a schema-less model, is very fast, scalable, and has a powerful query engine, and works directly with JSON data.
 
