@@ -74,7 +74,33 @@ The GitHub platform is going to handle the version-control for the system and wi
 The ELK stack can be extended to implement the message searching feature. The idea is to index all the groups/rooms and their respective messages allowing the user to search past messages.\
 As an option, we can also create a message classification system, which can flag essential messages.
 
-## 9. Attachments
+## 9. Services disposition
+
+  The solution, during production stage, is going to use the Kubernetes cointainer for orchestration, there will be 3 groups of clusters, the groups are:
+
+  • Service (Rest / WebSocket) - Responsible to serve the endpoints and the Websocket channels.\
+  • MongoDB - Responsible for the data persistence.\
+  • Redis - Responsible for the realtime publication/subscription channels involving.
+
+  The system is going to use a multi-cluster load balancer responsible to redirect the incoming connections between the available instances, sharing processing power and creating redudancy.
+
+  The MongoDB and Redis already have support for load balancing, sharding and replication.
+
+  The DevOps team will be responsible to monitor the services and adjust their configuration as necessary.
+
+  For development and initial deployment we can use a single container, providing the 3 services. As the accesses start growing we will need more fine grain control and the services will be separated in their own containers.
+
+  The sytem is going to use a private network for intra-service communication, the only service which will have public access is the service layer (Rest/Websocket).
+
+## 10 - Scalling
+
+  There are some questions which need to be addressed, for example, Websocket channels are statefull, requiring persistent resource allocation, this means that as the number of connections grows the system resources used to keep track of the persistent connection will increase proportionally.
+  
+  The load balancing system in conjunction with the Kubernetes engine is able to scale automatically its pods using configurable thresholds.
+
+  The services can be scalled vertically by increasing the memory available or the number and model of processors. It is required to have the services scaling horizontally, this creates redudancy and availability.
+
+## 11. Attachments
 
   [Sequence Diagram](./Sequence_diagram.pdf)
 
