@@ -69,36 +69,36 @@ There will be four sets of clusters, one for the development cycle, one for the 
 We are using the Asana Project Management system to create a collaborative development platform. It will handle tasks, issues, chronograms, and documentation snippets.\
 The GitHub platform is going to handle the version-control for the system and will be integrated on the Asana platform.
 
-## 8. New feature: Message search system.
+## 8. New feature: Message search system
 
 The ELK stack can be extended to implement the message searching feature. The idea is to index all the groups/rooms and their respective messages allowing the user to search past messages.\
 As an option, we can also create a message classification system, which can flag essential messages.
 
 ## 9. Services disposition
 
-  The solution, during production stage, is going to use the Kubernetes cointainer for orchestration, there will be 3 groups of clusters, the groups are:
+  The solution, during the production stage, is going to use the Kubernetes container for orchestration, there will be three groups of clusters, the groups are:
 
-  • Service (Rest / WebSocket) - Responsible to serve the endpoints and the Websocket channels.\
+  • Service (Rest / WebSocket) - Responsible for serving the endpoints and the WebSocket channels.\
   • MongoDB - Responsible for the data persistence.\
-  • Redis - Responsible for the realtime publication/subscription channels involving.
+  • Redis - Responsible for the real-time publication/subscription channels involving.
 
-  The system is going to use a multi-cluster load balancer responsible to redirect the incoming connections between the available instances, sharing processing power and creating redudancy.
+  The system is going to use a multi-cluster load balancer responsible for redirecting the incoming connections between the available instances, sharing processing power and creating redundancy.
 
-  The MongoDB and Redis already have support for load balancing, sharding and replication.
+  The MongoDB and Redis already have support for load balancing, sharding, and replication.
 
-  The DevOps team will be responsible to monitor the services and adjust their configuration as necessary.
+  The DevOps team will be responsible for monitoring the services and adjust their configuration as necessary.
 
-  For development and initial deployment we can use a single container, providing the 3 services. As the accesses start growing we will need more fine grain control and the services will be separated in their own containers.
+  For development and initial deployment, we can use a single container, providing the three services. As the accesses start growing we will need more fine grain control, then the services will be separated in their containers.
 
-  The sytem is going to use a private network for intra-service communication, the only service which will have public access is the service layer (Rest/Websocket).
+  The system is going to use a private network for intra-service communication, the only service which will have public access is the service layer (Rest/Websocket).
 
 ## 10 - Scalling
 
-  There are some questions which need to be addressed, for example, Websocket channels are statefull, requiring persistent resource allocation, this means that as the number of connections grows the system resources used to keep track of the persistent connection will increase proportionally.
+  There are some questions which need to be addressed, for example, WebSocket channels are stateful, requiring persistent resource allocation, this means that as the number of connections grows the system resources used to keep track of the persistent link will increase proportionally.
   
-  The load balancing system in conjunction with the Kubernetes engine is able to scale automatically its pods using configurable thresholds.
+  The load balancing system in conjunction with the Kubernetes engine can scale its pods automatically, using configurable thresholds.
 
-  The services can be scalled vertically by increasing the memory available or the number and model of processors. It is required to have the services scaling horizontally, this creates redudancy and availability.
+  The services can be scaled vertically by increasing the memory available or the number and model of processors. It is required to have the services scaling horizontally, creating redundancy and availability.
 
 ## 11. Attachments
 
