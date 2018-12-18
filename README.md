@@ -92,7 +92,7 @@ As an option, we can also create a message classification system, which can flag
 
   The system is going to use a private network for intra-service communication, the only service which will have public access is the service layer (Rest/Websocket).
 
-## 10 - Scalling
+## 10 - Challenges
 
   There are some questions which need to be addressed, for example, WebSocket channels are stateful, requiring persistent resource allocation, this means that as the number of connections grows the system resources used to keep track of the persistent link will increase proportionally.
   
