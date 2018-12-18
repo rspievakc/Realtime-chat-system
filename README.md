@@ -6,7 +6,7 @@
 
 &nbsp;&nbsp;The backend contains REST endpoints and WebSocket channels which implement real-time updates. The REST endpoints will handle user registration, the other services will be accessed by WebSockets.
 
-&nbsp;&nbsp;Please find the sequence diagram link on the section 9.
+&nbsp;&nbsp;Please find the sequence diagram link on the section 11.
 
 ## 2. Backend technology stack
 
